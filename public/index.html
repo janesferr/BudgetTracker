@@ -18,7 +18,7 @@
 
   <div class="wrapper">
     <div class="total">
-      <img src="./images/icons/money.png" alt="moneybagpicture" height="40px" width="40px" srcset="moneybag">
+      <img src="images/icons/money.png" alt="moneybagpicture" height="40px" width="40px">
       <div class="total">Your total is: $<span id="total">0</span></div>
     </div>
 
@@ -47,7 +47,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="js/index.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
@@ -57,6 +56,9 @@
       });
     }
   </script>
+  <script src="js/index.js"></script>
+  <script src="js/db.js"></script>
+
 
 </body>
 
