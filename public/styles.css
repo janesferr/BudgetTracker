@@ -13,13 +13,15 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #9d8ae4;
   text-align: left;
   padding: 8px;
+  
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #5727e6;
+  
 }
 
 .error {
@@ -48,4 +50,28 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+}
+/* added info here */
+.navbar {
+  cursor: pointer;
+  background-image: linear-gradient( #6a008a 0%, #6a008a 20%, #fa0053 100%);
+  color: white;
+}
+button{
+  background-color:#5727e6;
+  color: white;
+}
+
+
+@media (min-width: 767px) {
+  .navbar .dropdown-toggle:not(.nav-link)::after {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: .5em;
+      vertical-align: 0;
+      border-bottom: .3em solid transparent;
+      border-top: .3em solid transparent;
+      border-left: .3em solid;
+  }
 }

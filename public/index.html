@@ -8,18 +8,68 @@
   <meta name="theme-color" content="#317EFB">
   <link rel="shortcut icon" href="images/icons/icon-192x192.png" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/fontenele/bootstrap-navbar-dropdowns@5.0.2/dist/css/bootstrap-navbar-dropdowns.min.css">
+  <script
+    src="https://cdn.jsdelivr.net/gh/fontenele/bootstrap-navbar-dropdowns@5.0.2/dist/js/bootstrap-navbar-dropdowns.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="manifest" href="manifest.webmanifest" />
+
   <title>Budget Tracker</title>
 </head>
 
 <body>
+  <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+
+
+    <a class="navbar-brand" href="index.html">
+      <img src="images/icons/money.png" alt="moneybagpicture" height="40px" width="40px">
+      BUDGET TRACKER
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/janesferr"><img
+            src="https://icon-library.net/images/github-icon-png/github-icon-png-29.jpg" alt="" height="32"
+            width="32" />
+          Github</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="https://janesferr.github.io/Bootstrap">Author</a>
+      </li>
+    </ul>
+  </div>
+
+  </nav>
+
+  <!-- Main Body-->
+  <div class="wrapper">
+    <!-- <div class="jumbotron"> -->
+    <div class="container">
+      <h1 class="display-4">$<span id="total">0</span></h1>
+      <p class="lead">My Current Balance</p>
+      <p>
+      </p>
+    </div>
+  </div>
+
 
   <div class="wrapper">
     <div class="total">
       <img src="images/icons/money.png" alt="moneybagpicture" height="40px" width="40px">
-      <div class="total">Your total is: $<span id="total">0</span></div>
+      <!-- <div class="total">Your total is: $<span id="total">0</span></div> -->
     </div>
 
     <div class="form">
